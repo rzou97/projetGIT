@@ -62,6 +62,23 @@ io.emit("msg","user is disconnect");
 });
 });
 
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+function isOdd(number) {
+  return number % 2 !== 0;
+}
+
+function calculateSquareRoot(number) {
+  if (number < 0) {
+    throw new Error("Le nombre doit être positive.");
+  
+  }
+  return Math.sqrt(number);
+  
+}
+
 
 
 server.listen(3002, console.log("server run"));
