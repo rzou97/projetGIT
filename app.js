@@ -72,7 +72,24 @@ function isOdd(number) {
 
 function calculateSquareRoot(number) {
   if (number < 0) {
-    throw new Error("Le nombre doit être positive.");
+    throw new Error("Le nombre doit être >0");
+
+  }
+  return Math.sqrt(number);
+
+}
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+function isOdd(number) {
+  return number % 2 !== 0;
+}
+
+function calculateSquareRoot(number) {
+  if (number < 0) {
+    throw new Error("Le nombre doit être >0");
   
   }
   return Math.sqrt(number);
